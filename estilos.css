@@ -1,0 +1,271 @@
+body{
+    margin: 0;
+    background-color: black;
+}
+/* Aca empieza el nav */
+nav{
+    font-family: Arial, Helvetica, sans-serif ;
+    position:sticky;
+    top:0;
+    background-color: #229954bb;
+    width: 100% ;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end
+}
+.menu{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    
+    
+}
+.menu li a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.952);
+    padding: 20px;
+    display: block;
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+.menu li a:hover{
+    background: #0d552b;
+}
+/* Aca termina el nav */
+
+
+/* Aca empieza el index */
+.grid_container{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.grid_container section img{
+    display: grid;
+    justify-content: start;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.parrafo{
+    color: wheat;
+    
+}
+/* Aca termina el index */
+
+
+/* Aca empieza artistas html */
+.artistas{
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    justify-content: space-around;
+    color: wheat;
+}
+
+.columna_artista{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+h2{
+    color: wheat
+}
+/* Aca termina artistas html */
+
+/* Aca empieza shows html */
+.Titulos_show{ 
+    display: grid;
+    font-family: Arial, Helvetica, sans-serif ;
+    color: antiquewhite;
+}
+
+.grids_fechas_shows{
+    display: grid;
+    color: white;
+    padding: 10px;
+    gap :10px;
+    
+}
+
+.grids_fechas_shows li{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    justify-content: space-around;
+    align-items: center;
+    grid-column-gap:10px;
+}
+/* Aca termina shows html */
+
+/* Aca empieza galeria html------------------------------------------------------------------------------ */
+.titulo_galeria{
+    color: antiquewhite;
+}
+
+.galeria_imagenes{
+    display: grid;
+    grid-template-columns: auto auto auto;   
+    padding: 10px;
+    gap :7px;
+
+}
+.galeria_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*esta propiedad sirve para que la imagen no se distorcione con respecto a su ancho*/
+}
+ /* Aca termina galeria html-------------------------------------------------------------------------------- */
+
+
+/* Aca empieza contactos html */
+.formulario{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+.letra{
+    font-family: cursive;
+    color: white;
+    
+}
+.botton{
+    background-color: #0d552b;
+    color: white;
+}
+
+h1{
+    color   : white;
+}
+/* Aca termina contactos html */
+
+
+
+
+/* Aca empieza el footer */
+footer{
+    width: 100%;
+    padding-bottom: 1px;
+    background-color: #22995883;
+    background-size: cover;
+}
+.container_footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+.box__footer.terms{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: black;
+    font-size: 18px;
+}
+.box__footer h2{
+    margin-bottom: 30px;
+    color: black;
+    font-weight: 700;
+}
+.box__footer a{
+    margin-top: 10px;
+    color: black;
+    font-weight: 600;
+}
+.box__footer a:hover{
+    opacity: 0.8;
+}
+
+.box__footer a .fab{
+    font-size: 20px;
+}
+.box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+.box__copyright p{
+    margin-top: 20px;
+    color: black;
+}
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: black;
+}
+/* Aca termina el footer */
+
+
+/* Aca empieza el media mobile */
+@media(max-width: 768px) {
+
+    .menu{
+        list-style: none;
+        padding: 0;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        
+        
+    }
+    .menu li a{
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.952);
+        padding: 0px;
+        display: block;
+    }
+
+    .body{
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .grid_container{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .grid_container section img{
+        display: grid;
+        justify-content: start;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /*esta propiedad sirve para que la imagen no se distorcione con respecto a su ancho*/
+    }
+    .parrafo{
+        color: wheat;
+    
+    }
+
+    /* Aca empieza artistas html mobile */
+    .artistas{
+        display: grid;
+        grid-template-columns: auto;
+    }  
+    /* Aca termina artistas html mobile */
+
+    /* Aca empieza galeria html mobile */
+    .galeria_imagenes{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .galeria_img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    /* Aca termina galeria html mobile */
+
+} 
+/* Aca termina el media mobile */
