@@ -118,7 +118,14 @@ h2{
     width: 100%;
     height: 100%;
     object-fit: cover; /*esta propiedad sirve para que la imagen no se distorcione con respecto a su ancho*/
+    transition: 0.7s;
 }
+.galeria_imagenes :hover{
+    -webkit-transform:scale(1);transform:scale(1.05);
+    overflow:hidden;
+}
+
+
  /* Aca termina galeria html-------------------------------------------------------------------------------- */
 
 
