@@ -11,7 +11,8 @@ nav{
     width: 100% ;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end
+    justify-content: flex-end;
+    z-index: 5;
 }
 .menu{
     list-style: none;
