@@ -20,8 +20,7 @@ nav{
     display: flex;
     width: 50%;
     justify-content: space-around;
-    
-    
+    margin-top: 16px;
 }
 .menu li a{
     text-decoration: none;
@@ -34,8 +33,10 @@ nav{
     text-align: center;
 }
 .menu li a:hover{
-    background: #0d552b;
+    background: #064621ce;
 }
+
+
 /* Aca termina el nav */
 
 
@@ -53,7 +54,14 @@ nav{
 }
 .parrafo{
     color: wheat;
+    padding: 20px;
     
+}
+.titulo_inicio{
+    color: wheat;
+    padding: 20px;
+    display: flex;
+    justify-content: center
 }
 /* Aca termina el index */
 
@@ -150,6 +158,20 @@ h2{
 h1{
     color   : white;
 }
+
+.display-4{
+    color: black;
+}
+
+.jumbotron{
+    background-color: #0a7034ea;
+}
+
+.btn{
+    background-color: rgb(6, 46, 1);
+}
+
+
 /* Aca termina contactos html */
 
 
