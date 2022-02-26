@@ -1,0 +1,89 @@
+$redes: (
+	twitter: #51aff8,
+	facebook: #2956a3,
+	linkedin: #0076b8,
+	instagram: #ce1312
+);
+footer{
+    width: 100%;
+    padding-bottom: 1px;
+    background-color: #22995883;
+    background-size: cover;
+    .container_footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: auto;
+        .box__footer{
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+            .terms{
+                max-width: 350px;
+                margin-top: 20px;
+                font-weight: 500;
+                color: black;
+                font-size: 18px;
+            }
+            h2{
+                margin-bottom: 30px;
+                color: black;
+                font-weight: 700;
+            }
+            a{
+                margin-top: 10px;
+                color: black;
+                font-weight: 600;
+                &:hover{
+                    opacity: 0.8;
+                    color: green;
+                }
+                .fab{
+                    font-size: 20px;
+                }
+            }
+            .facebook{
+                &:hover{
+                    color: map-get($redes, facebook);
+                }
+            }
+            .Twitter{
+                &:hover{
+                    color: map-get($redes, twitter);
+                }
+            }
+            .linkedin{
+                &:hover{
+                    color: map-get($redes, linkedin);
+                }
+            }
+            .Instagram{
+                &:hover{
+                    color: map-get($redes, instagram);
+                }
+            }
+        }
+    }
+    .box__copyright{
+        max-width: 1200px;
+        margin: auto;
+        text-align: center;
+        padding: 0px 40px;
+        p{
+            margin-top: 20px;
+            color: black;
+        }
+        hr{
+            border: none;
+            height: 1px;
+            background-color: black;
+        }
+        b{
+            color:rgb(31, 29, 29);
+            &:hover{
+                color: black;
+            }
+        }
+    }
+    
+}

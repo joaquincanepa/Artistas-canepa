@@ -1,0 +1,20 @@
+@mixin size-btn($ancho, $alto) {
+    height: $ancho;
+    width: $alto;
+}
+
+.btn{
+    background-color: rgb(6, 46, 1);
+    &:hover{
+        background-color: black;
+    }
+    &--enviar{
+        @include size-btn(46px, 200px);
+    }
+    &--limpiar{
+        @include size-btn(46px,100px );
+        &:hover{
+            background-color: rgba(128, 128, 128, 0.562);
+        }
+    }
+}
