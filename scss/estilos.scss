@@ -29,8 +29,7 @@ section{
         
     }
     .titulo_inicio{
-        color: wheat;
-        padding: 20px;
+        @extend .parrafo;
         display: flex;
         justify-content: center
     }

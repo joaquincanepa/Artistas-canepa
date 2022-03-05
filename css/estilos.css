@@ -116,13 +116,11 @@ body {
     height: 100%;
     object-fit: cover; }
 
-section .parrafo {
+section .parrafo, section .titulo_inicio {
   color: wheat;
   padding: 20px; }
 
 section .titulo_inicio {
-  color: wheat;
-  padding: 20px;
   display: flex;
   justify-content: center; }
 
@@ -221,7 +219,7 @@ h1 {
     height: 100%;
     object-fit: cover;
     /*esta propiedad sirve para que la imagen no se distorcione con respecto a su ancho*/ }
-  .parrafo {
+  .parrafo, section .titulo_inicio {
     color: wheat; }
   /* Aca empieza artistas html mobile */
   .artistas {
