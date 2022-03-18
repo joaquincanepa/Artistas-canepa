@@ -8,6 +8,7 @@
 body{
     margin: 0;
     background-color: black;
+    overflow-x: hidden
 }
 
 /* Aca empieza el index */
@@ -18,7 +19,7 @@ body{
         display: grid;
         justify-content: start;
         width: 100%;
-        height: 100%;
+        height: 350px;
         object-fit: cover;
     }
 }
@@ -37,7 +38,12 @@ section{
 /* Aca termina el index */
 
 /* Aca empieza artistas html */
-    
+
+    .titleArt{
+        font-size: large;
+        color: rgb(214, 186, 134);
+    }
+
     .artistas{
         list-style: none;
         padding: 0;
@@ -62,12 +68,15 @@ section{
     display: grid;
     font-family: Arial, Helvetica, sans-serif ;
     color: antiquewhite;
+    justify-content: center;
 }
 .grids_fechas_shows{
     display: grid;
     color: white;
     padding: 10px;
     gap :10px;
+    margin-left: 130px;
+    //margin-right: -100px;
     li{
         display: grid;
         grid-template-columns: 2fr 2fr 2fr 2fr;
@@ -79,26 +88,47 @@ section{
 /* Aca termina shows html */
 
 /* Aca empieza galeria html------------------------------------------------------------------------------ */
-.titulo_galeria{
-    color: antiquewhite;
-}
-.galeria_imagenes{
-    display: grid;
-    grid-template-columns: auto auto auto;   
-    padding: 10px;
-    gap :7px;
-    .galeria_img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover; /*esta propiedad sirve para que la imagen no se distorcione con respecto a su ancho*/
-        transition: 0.7s;
-        &:hover{
-            -webkit-transform:scale(1);transform:scale(1.05);
-            overflow:hidden;
-        }
+
+
+.galeria{
+    font-family: 'open sans';
+    h1{
+        text-align: center;
+        margin:20px 0 15px 0;
+        font-weight: 300;
+        color: wheat;
     }
-    
+    .linea{
+        border-top: 5px solid  #229954bb;
+        margin-bottom: 40px;
+    }
+    .contenedor-imagenes{
+        display:flex;
+        width: 85%;
+        margin: auto;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        border-radius:3px;
+    }
+    .imagen{
+        width: 32%;
+        position: relative;
+        height:250px;
+        margin-bottom:5px;
+        img{
+            width: 100%;
+        height:100%;
+        object-fit: cover;
+        transition: 0.9s;
+            &:hover{
+                -webkit-transform:scale(1);transform:scale(1.05);
+                overflow:hidden;
+            }
+        }
+        
+    }
 }
+
  /* Aca termina galeria html-------------------------------------------------------------------------------- */
 
 /* Aca empieza contactos html */
@@ -115,9 +145,9 @@ h1{
 /* Aca termina contactos html */
 
 /* Aca empieza el media mobile */
-@media(max-width: 768px) {
-
+@media(max-width: 910px) {
     nav{
+        
         .menu{
             list-style: none;
             padding: 0;
@@ -160,18 +190,200 @@ h1{
         grid-template-columns: auto;
     }  
     /* Aca termina artistas html mobile */
+/* Aca empieza shows html */
+.Titulos_show{ 
+    display: grid;
+    font-family: Arial, Helvetica, sans-serif ;
+    color: antiquewhite;
+    justify-content: center;
+}
+.grids_fechas_shows{
+    display: grid;
+    color: white;
+    padding: 10px;
+    gap :10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    li{
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+        justify-content: space-around;
+        align-items: center;
+        grid-column-gap:10px;
+    }
+}
+/* Aca termina shows html */
 
     /* Aca empieza galeria html mobile */
-    .galeria_imagenes{
-        display: grid;
-        grid-template-columns: auto;
-    }
 
-    .galeria_img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+
+    @media screen and (max-width:1000px){
+        .contenedor-imagenes{
+            width: 95%;
+        }
+    }
+    
+    @media screen and (max-width:700px){
+        .contenedor-imagenes{
+            width: 90%;
+        }
+        .contenedor-imagenes .imagen{
+            width: 48%;
+        }
+    }
+    
+    @media screen and (max-width:450px){
+        h1{
+            font-size:22px;
+        }
+        .contenedor-imagenes{
+            width: 98%;
+        }
+        .contenedor-imagenes .imagen{
+            width: 80%;
+        }
     }
     /* Aca termina galeria html mobile */
 
 } /* Aca termina el media mobile */
+
+@media only screen and (min-width: 767px) and (max-width: 880px){
+
+    /* Aca empieza shows html */
+    .Titulos_show{ 
+        display: grid;
+        font-family: Arial, Helvetica, sans-serif ;
+        color: antiquewhite;
+        justify-content: center;
+    }
+    .grids_fechas_shows{
+        display: grid;
+        color: white;
+        padding: 10px;
+        gap :10px;
+        margin-left: 130px;
+        //margin-right: -100px;
+        li{
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr 2fr;
+            justify-content: space-around;
+            align-items: center;
+            grid-column-gap:10px;
+        }
+    }
+    /* Aca termina shows html */
+}
+
+/*aca empieza error 404*/
+svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -400px;
+    #Polygon-1,
+    #Polygon-2,
+    #Polygon-3,
+    #Polygon-4,
+    #Polygon-4,
+    #Polygon-5 {
+        animation: float 1s infinite ease-in-out alternate;
+    }
+    #Polygon-2 {
+        animation-delay: 0.2s;
+    }
+    #Polygon-3 {
+        animation-delay: 0.4s;
+    }
+    #Polygon-4 {
+        animation-delay: 0.6s;
+    }
+    #Polygon-5 {
+        animation-delay: 0.8s;
+    }
+}
+.message-box {
+    height: 200px;
+    width: 380px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: 50px;
+    color: #fff;
+    font-family: Roboto;
+    font-weight: 300;
+    h1 {
+        font-size: 60px;
+        line-height: 46px;
+        margin-bottom: 40px;
+        color: #229954bb;
+    }
+}
+.buttons-con .action-link-wrap {
+    margin-top: 40px;
+    a {
+        background: #229954bb;
+        padding: 8px 25px;
+        border-radius: 4px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 14px;
+        transition: all 0.3s linear;
+        cursor: pointer;
+        text-decoration: none;
+        margin-right: 10px;
+        &:hover{
+            background: #031301;
+            color: #fff;
+        }
+    }
+}
+
+@keyframes float {
+    100% {
+    transform: translateY(20px);
+    }
+}
+@media (max-width: 450px) {
+    svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -250px;
+        margin-left: -190px;
+    }
+    .message-box {
+        top: 50%;
+        left: 50%;
+        margin-top: -100px;
+        margin-left: -190px;
+        text-align: center;
+    }
+}
+
+@media(max-width: 281px){
+
+    .grids_fechas_shows {
+        display: grid;
+        color: white;
+        padding: 0px;
+        gap: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+        font-size: small;
+    }
+}
+@media only screen and (min-width: 767px) and (max-width: 1023px){
+    .grid_container{
+        display: grid;
+        grid-template-columns: auto auto;
+        img{
+            display: grid;
+            justify-content: start;
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+    }
+}
