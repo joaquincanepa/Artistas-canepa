@@ -194,19 +194,19 @@ footer {
         background-color: rgba(128, 128, 128, 0.562); } }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   background-color: black;
   overflow-x: hidden; }
 
 /* Aca empieza el index */
 .grid_container {
   display: grid;
-  grid-template-columns: auto auto; }
+  grid-template-columns: 50% 50%;
+  height: calc(100vh-100px-300px); }
   .grid_container img {
     display: grid;
     justify-content: start;
     width: 100%;
-    height: 350px;
     object-fit: cover; }
 
 section .parrafo, section .titulo_inicio {
