@@ -486,7 +486,7 @@ svg {
     gap: 10px;
     margin-left: 0px;
     margin-right: 0px;
-    font-size: small; } }
+    font-size: x-small; } }
 
 @media only screen and (min-width: 767px) and (max-width: 1023px) {
   .grid_container {
