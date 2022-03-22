@@ -491,10 +491,9 @@ svg {
 @media only screen and (min-width: 767px) and (max-width: 1023px) {
   .grid_container {
     display: grid;
-    grid-template-columns: auto auto; }
+    grid-template-columns: auto; }
     .grid_container img {
       display: grid;
       justify-content: start;
       width: 100%;
-      height: 350px;
       object-fit: cover; } }
